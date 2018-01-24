@@ -35,7 +35,6 @@ import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
-    private Context mContext;
     private Button button, button1;
     private SurfaceView surfaceView;
 
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mContext = this;
         surfaceView = (SurfaceView) findViewById(R.id.surfaceview);
 
         button1 = (Button) findViewById(R.id.button1);
