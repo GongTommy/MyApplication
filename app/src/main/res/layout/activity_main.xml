@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+    <TextView
+        android:id="@+id/tv"
+        android:text="美国队长"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:text="显示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:text="隐藏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/ft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.administrator.myapplication.MainFragment"/>
+
+</LinearLayout>
