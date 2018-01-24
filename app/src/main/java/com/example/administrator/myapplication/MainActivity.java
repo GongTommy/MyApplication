@@ -36,7 +36,6 @@ import io.reactivex.schedulers.Schedulers;
 public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     private Button button, button1;
-    private SurfaceView surfaceView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +43,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        surfaceView = (SurfaceView) findViewById(R.id.surfaceview);
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                surfaceView.setVisibility(View.GONE);
             }
         });
 
@@ -58,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                surfaceView.setVisibility(View.VISIBLE);
             }
         });
     }
